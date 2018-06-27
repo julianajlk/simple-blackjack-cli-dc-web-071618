@@ -33,7 +33,7 @@ def initial_round
   current_card_total = deal_card
   current_card_total += deal_card
   sum = rand(1..11) + rand(1..11)
-  display_card_total(sum)
+  puts sum
 end
 
 def hit?(card_total)
