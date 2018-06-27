@@ -31,8 +31,8 @@ end
 def initial_round
   # code #initial_round here
   current_card_total = deal_card
-  current_card_total += deal_card
-  card_total = rand(1..11) + rand(1..11)
+  
+  card_total = deal_card + deal_card
   display_card_total(card_total)
   return card_total
 end
