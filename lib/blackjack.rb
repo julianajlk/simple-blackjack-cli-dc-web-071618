@@ -32,8 +32,8 @@ def initial_round
   # code #initial_round here
   current_card_total = deal_card
   current_card_total += deal_card
-  display_card_total = deal_card + deal_card
-  puts "Your cards add up to #{display_card_total}"
+  sum = rand(1..11) + rand(1..11)
+  display_card_total(sum)
 end
 
 def hit?(card_total)
